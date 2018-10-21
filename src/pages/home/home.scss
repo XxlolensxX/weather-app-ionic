@@ -1,3 +1,59 @@
 page-home {
+    .background{
+        background-image: url(../../assets/imgs/background-weatherapp-cloudy.jpg);
+    }
 
+    .flexContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .flexFix{
+        justify-content: space-between;
+    }
+
+    .mainContent{
+
+        .primaryInfo{
+            color: color($colors, white);
+            height: 100%;
+
+            .cityTitle{
+                font: {
+                    size: 1.5em;
+                    weight: 300;
+                };
+                margin: 0;
+            }
+
+            .date{
+                font: {
+                    size: 14px;
+                    weight: 300;
+                }
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .iconState{
+                font-size: 8em;
+                text-align: center;
+            }
+
+            .currentTemperature{
+                font: {
+                    size: 4.5em;
+                    weight: 700;
+                }
+            }
+        }
+        .secondaryInfo{
+             background-color: color($colors, light);
+             width: 100%;
+        }
+    }
 }
